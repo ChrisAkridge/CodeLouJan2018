@@ -18,5 +18,10 @@ namespace TreehouseCoursework
 				dictionary.Remove(key);
 			}
 		}
+
+		public static IList<T> Duplicate<T>(this IList<T> list)
+		{
+			return list.Concat(list).ToList();
+		}
 	}
 }
