@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TreehouseDefense
 {
-	class Path
+	public class Path
 	{
 		private MapLocation[] path;
 
@@ -17,9 +17,8 @@ namespace TreehouseDefense
 
 		public int Length => path.Length;
 
-		public Path(MapLocation[] path)
-		{
-			this.path = path;
-		}
+		public Path(MapLocation[] path) => this.path = path;
+
+		public bool IsOnPath(MapLocation mapLocation) => path.Contains(mapLocation);
 	}
 }

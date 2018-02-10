@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TreehouseDefense
 {
-	class Invader
+	public class Invader
 	{
 		private int pathStep = 0;
 		private readonly Path path;

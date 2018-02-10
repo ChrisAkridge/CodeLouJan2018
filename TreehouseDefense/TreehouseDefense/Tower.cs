@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TreehouseDefense
 {
-	class Tower
+	public class Tower
 	{
 		private const int FiringRange = 1;
 		private const int DamageAmount = 1;
@@ -28,7 +28,7 @@ namespace TreehouseDefense
 			this.location = location;
 		}
 
-		public void FireOnInaders(Invader[] invaders)
+		public void FireOnInvaders(Invader[] invaders)
 		{
 			foreach (var invader in invaders)
 			{

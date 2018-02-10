@@ -29,7 +29,7 @@ namespace TreehouseDefense
 			{
 				foreach (Tower tower in Towers)
 				{
-					tower.FireOnInaders(invaders);
+					tower.FireOnInvaders(invaders);
 				}
 
 				remainingInvaders = 0;
